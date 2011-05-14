@@ -17,6 +17,7 @@ module IVES
       doc.at("venue").children.each do |node|
         attributes[node.name] = node.children.to_s
       end
+      attributes["id"] = id
       self.new(attributes)
     end
     
