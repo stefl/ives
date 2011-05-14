@@ -4,11 +4,16 @@ GEM
     diff-lcs (1.1.2)
     git (1.2.5)
     hashie (1.0.0)
+    httpi (0.9.3)
+      ntlm-http (>= 0.1.1)
+      rack
     jeweler (1.5.2)
       bundler (~> 1.0.0)
       git (>= 1.2.5)
       rake
     nokogiri (1.4.4)
+    ntlm-http (0.1.1)
+    rack (1.2.2)
     rake (0.8.7)
     rcov (0.9.9)
     rspec (2.5.0)
@@ -26,6 +31,7 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 1.0.0)
   hashie
+  httpi
   jeweler (~> 1.5.2)
   nokogiri
   rcov
