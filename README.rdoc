@@ -7,6 +7,18 @@ Translation - every cultural venue in the UK (and hopefully the World) will have
 
 This is an unofficial gem to consume the XML API offered by the service.
 
+Usage
+-----
+
+    gem install ives
+    
+or with Bundler add this to your Gemfile
+
+    gem "ives"
+
+What does it do?
+----------------
+
 It currently provides a small subset of the API methods:
 
     require 'ives'
@@ -31,7 +43,8 @@ It currently provides a small subset of the API methods:
      "town"=>"Glasgow"}
     => nil
 
-Other methods:
+Other methods
+-------------
 
     IVES::Venue.find(free_text)
     
