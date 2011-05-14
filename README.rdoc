@@ -31,6 +31,16 @@ It currently provides one method:
      "town"=>"Glasgow"}
     => nil
 
+Other methods:
+
+    IVES::Venue.find(free_text)
+    
+This will search for a matching named venue. This is probably the 90% use case. "What is the name of the theatre you want?", etc.
+
+    IVES::Venue.find_by_postcode(postcode)
+    
+This will search against a venue postcode. No way of knowing if it strips spaces or not at the moment.
+
 More methods to come as and when required.
 
 == Contributing to ives
