@@ -56,7 +56,8 @@ This will search against a venue postcode. No way of knowing if it strips spaces
 
 More methods to come as and when required.
 
-== Contributing to ives
+Contributing to ives
+====================
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
@@ -66,8 +67,8 @@ More methods to come as and when required.
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-== Copyright
+Copyright
+=========
 
-Copyright (c) 2011 steflewandowski. See LICENSE.txt for
-further details.
+Copyright (c) 2011 Stef Lewandowski. See LICENSE.txt for further details.
 
