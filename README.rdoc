@@ -7,7 +7,7 @@ Translation - every cultural venue in the UK (and hopefully the World) will have
 
 This is an unofficial gem to consume the XML API offered by the service.
 
-It currently provides one method:
+It currently provides a small subset of the API methods:
 
     require 'ives'
     kelvin_hall = IVES::Venue.get("r34lt")
