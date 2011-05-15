@@ -15,7 +15,7 @@ module IVES
       end
       attributes = {}
       doc.at("venue").children.each do |node|
-        attributes[node.name] = node.children.to_s
+        attributes[node.name.to_s] = node.children.to_s
       end
       attributes["id"] = id
       self.new(attributes)
@@ -31,7 +31,8 @@ module IVES
       request.body = terms.collect{|k,v| "#{k}=#{v}"}.join("&")
       result = HTTPI.post request
       doc = Nokogiri::HTML(result.body)
-      top = doc.css("ul.searchResults li a").first.attributes["href"] rescue nil
+      top = doc.css("ul.searchResults li a").first.attributes["href"].to_s rescue nil
+      puts top.inspect
       if top
         Venue.get(top)
       else
