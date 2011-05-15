@@ -31,7 +31,7 @@ module IVES
       request.body = terms.collect{|k,v| "#{k}=#{v}"}.join("&")
       result = HTTPI.post request
       doc = Nokogiri::HTML(result.body)
-      top = doc.css("ul.searchResults li a").first.attributes["href"]
+      top = doc.css("ul.searchResults li a").first.attributes["href"] rescue nil
       if top
         Venue.get(top)
       else
